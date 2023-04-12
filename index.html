@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Atividade02</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="containerPerfil">
+        <div id="secao1Perfil">
+            <div id="framePicturePerfil">
+                <p>Editar</p>
+                <button onclick="opcaoEmDesenvolvimento()">
+                    <img src="/img/gifPerfil.gif" alt="">
+                </button>
+            </div>
+            <div id="dadosPrimarios">
+                <h1 id="nicknamePerfil">Nickname</h1>
+                <h1 id="IDPerfil">ID: XXXXXXXX</h1>
+                <button onclick="opcaoEmDesenvolvimento()" id="editarNicknamePerfil">Editar</button>
+            </div>
+
+
+        </div>
+        <div id="secao2Perfil">
+            <div id="opcoesSecao2">
+                <button onclick="alterarOpc(1)">Bio</button>
+                <button onclick="alterarOpc(2)">Dados</button>
+                <button onclick="alterarOpc(3)">Amigos</button>
+                <button onclick="alterarOpc(4)">Estilização</button>
+                <button onclick="alterarOpc(5)">Suporte</button>
+            </div>
+            <div class="containerSecao2" id="op1">
+                <h1>Título</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime accusantium pariatur libero quia impedit reiciendis facere, labore minima alias. Minima commodi architecto esse aliquam hic harum voluptatibus laborum ipsum!</p>
+            </div>
+            <div class="containerSecao2" id="op2">
+                <table id="dadosTable">
+                    <caption id="dadosTableTitulo">Dados do usuário</caption>
+                    <tbody id="dadosTableBody">
+                        <tr class="dadosBodyLinha">
+                            <td class="dadosBodyColuna1">Nome---------</td>
+                            <td class="dadosBodyColuna2">: XXXXXXXX</td>
+                        </tr>
+                        <tr class="dadosBodyLinha">
+                            <td class="dadosBodyColuna1">Idade----------</td>
+                            <td class="dadosBodyColuna2">: XX</td>
+                        </tr>
+                        <tr class="dadosBodyLinha">
+                            <td class="dadosBodyColuna1">Nacionalidade-</td>
+                            <td class="dadosBodyColuna2">: XXXXXXXX</td>
+                        </tr>
+                        <tr class="dadosBodyLinha">
+                            <td class="dadosBodyColuna1">Email----------</td>
+                            <td class="dadosBodyColuna2">: XXXXXXXX@email.com</td>
+                        </tr>
+                        <tr class="dadosBodyLinha">
+                            <td class="dadosBodyColuna1">Telefone-------</td>
+                            <td class="dadosBodyColuna2">: XXXXXXXX</td>
+                        </tr>
+                    </tbody>
+                    <tfoot id="dadosTableFoot">
+                        <tr>
+                            <td colspan="2">Ultima atualização: 12/04/2023</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="containerSecao2" id="op3">
+                <h1>Em desenvolvimento</h1>
+            </div>
+            <div class="containerSecao2" id="op4">
+                <h1>Em desenvolvimento</h1>
+            </div>
+            <div class="containerSecao2" id="op5">
+                <h1>Sendo desenvolvido por: <br>GUSTAVO BRIAN MACIEL RODRIGUES PORTELA</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

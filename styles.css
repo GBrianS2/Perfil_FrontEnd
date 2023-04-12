@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(45deg, black, crimson);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#containerPerfil {
+    border: 2px solid rgba(195, 0, 255, 0.322);
+    height: 600px;
+    width: 1200px;
+    background-image: url("img/gifTeste.gif");
+    background-size: cover;
+    display: flex;
+    box-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+
+#containerPerfil #secao1Perfil {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0 8% 8% 0;
+    background-color: rgba(0, 0, 0, 0.603);
+    border: 1px solid rgb(174, 0, 255);
+    border-right: 3px solid rgba(204, 174, 224, 0.575);
+}
+
+#containerPerfil #secao1Perfil #framePicturePerfil {
+    height: 30%;
+    width: 50%;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    border: 1px solid rgb(174, 0, 255);
+    transform: translate(-50%, 0);
+    box-shadow: 0px 0px 20px rgb(0, 38, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(56, 6, 97, 0.521);
+}
+
+#containerPerfil #secao1Perfil #framePicturePerfil p {
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    text-justify: center;
+}
+
+#containerPerfil #secao1Perfil #framePicturePerfil button {
+    height: 90%;
+    width: 90%;
+    border-radius: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+#containerPerfil #secao1Perfil #framePicturePerfil button img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    transition: 1s;
+}
+
+#containerPerfil #secao1Perfil #framePicturePerfil button img:hover,
+#containerPerfil #secao1Perfil #framePicturePerfil button:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+#containerPerfil #secao1Perfil #dadosPrimarios {
+    color: white;
+    background-color: rgba(153, 0, 255, 0.24);
+    letter-spacing: 2px;
+    border-radius: 20px 0 0 20px;
+    width: 90%;
+    margin-left: 10%;
+}
+
+#containerPerfil #secao1Perfil #dadosPrimarios #nicknamePerfil {
+    text-align: center;
+}
+
+#containerPerfil #secao1Perfil #dadosPrimarios #IDPerfil {
+    font-size: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#containerPerfil #secao1Perfil #dadosPrimarios #editarNicknamePerfil {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    width: 30%;
+    position: relative;
+    left: 65%;
+    box-shadow: 0px -2px 5px rgba(158, 79, 189, 0.76);
+    background-color: rgba(143, 8, 143, 0.349);
+    border-radius: 10px 10px 0 0;
+    margin-top: 3%;
+    cursor: pointer;
+    border: none;
+}
+
+#containerPerfil #secao1Perfil #dadosPrimarios #editarNicknamePerfil:hover {
+    background-color: rgba(174, 0, 255, 0.356);
+}
+
+#containerPerfil #secao2Perfil {
+    height: 100%;
+    width: 70%;
+}
+
+#containerPerfil #secao2Perfil #opcoesSecao2 {
+    height: 13%;
+    width: 100%;
+    padding-left: 2.9%;
+    position: relative;
+    z-index: 0;
+}
+
+#containerPerfil #secao2Perfil #opcoesSecao2 button {
+    width: 18%;
+    height: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 0 0 15px 15px;
+    margin: 0.5%;
+    margin-top: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.253);
+    letter-spacing: 1px;
+}
+
+#containerPerfil #secao2Perfil #opcoesSecao2 button:hover {
+    background-color: rgba(255, 255, 255, 0.103);
+    font-size: 23px;
+}
+
+#containerPerfil #secao2Perfil #opcoesSecao2 button:focus {
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+#containerPerfil #secao2Perfil .containerSecao2 {
+    height: 65%;
+    width: 58%;
+    background-color: rgba(174, 0, 255, 0.192);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px white;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 34.2%;
+    top: 23%;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 0;
+}
+
+#containerPerfil #secao2Perfil #op1 {
+    flex-direction: column;
+    opacity: 1;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+#containerPerfil #secao2Perfil #op1 h1 {
+    font-size: 1.8em;
+    text-align: center;
+    text-shadow: 0px 0px 2px rgb(55, 0, 255);
+    margin-bottom: 30px;
+}
+
+#containerPerfil #secao2Perfil #op1 p {
+    width: 80%;
+    text-align: center;
+    font-size: 23px;
+}
+
+#containerPerfil #secao2Perfil #op2 {}
+
+#containerPerfil #secao2Perfil #op3 {}
+
+#containerPerfil #secao2Perfil #op4 {}
+
+#containerPerfil #secao2Perfil #op5 {}
+
+#dadosTableTitulo {
+    font-size: 50px;
+}
+
+#dadosTable {
+    height: 75%;
+    width: 75%;
+}
+
+#dadosTableBody {
+    padding: 20px;
+}
+
+#dadosTableBody .dadosBodyLinha .dadosBodyColuna1 {
+    text-align: end;
+    width: 50%;
+    font-size: 22px;
+}
+
+#dadosTableBody .dadosBodyLinha .dadosBodyColuna2 {
+    text-align: start;
+    width: 50%;
+    font-size: 22px;
+}
+
+#dadosTableFoot {
+    height: 10%;
+}
+
+#dadosTableFoot tr td {
+    text-align: center;
+}
